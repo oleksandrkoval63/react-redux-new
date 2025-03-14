@@ -6,3 +6,5 @@ export const addBook = (newBook) => {
       payload: newBook,
    };
 };
+
+export default addBook;
