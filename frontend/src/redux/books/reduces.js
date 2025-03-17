@@ -11,7 +11,7 @@ const booksReducer = (state = initialState, action) => {
       case a.TOGGLE_FAVORITE:
          return state.map((book) =>
             book.id === action.payload
-               ? { ...state, isFavorite: !book.isFavorite }
+               ? { ...book, isFavorite: !book.isFavorite }
                : book
          );
       default:
